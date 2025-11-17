@@ -124,7 +124,7 @@ export default function Details() {
                         <div className="flex flex-col gap-5">
                             <p className='text-dark dark:text-white text-xm '>
                                 Nestled in the heart of miami, the modern luxe villa at 20 s aurora ave offers a perfect blend of contemporary
-                                elegance and smart-home innovation. priced at $570000, this 560 ft² residence features 4 spacious bedrooms,
+                                elegance and smart-home innovation. priced at ₦570000, this 560 ft² residence features 4 spacious bedrooms,
                                 3 luxurious bathrooms, and expansive living areas designed for comfort and style. built in 2025, the home
                                 boasts energy-efficient systems, abundant natural light, and state-of-the-art security features. outdoor
                                 spaces include two stylish bar areas, perfect for entertaining 8+ guests. enjoy the ultimate in modern living

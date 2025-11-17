@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
               Futuristic Haven
             </h1>
             <div className='flex flex-col xs:flex-row justify-center md:justify-start gap-4'>
-              <Link href="/contactus" className='px-8 py-4 border border-white dark:border-dark bg-white dark:bg-dark text-dark dark:text-white duration-300 dark:hover:text-dark hover:bg-transparent hover:text-white text-base font-semibold rounded-full hover:cursor-pointer'>
+              <Link href="/contactus" className='px-8 py-4 border border-white dark:border-dark bg-primary dark:bg-primary text-white dark:text-white duration-300 dark:hover:text-dark hover:bg-transparent hover:text-white text-base font-semibold rounded-full hover:cursor-pointer'>
                 Get in touch
               </Link>
               <button className='px-8 py-4 border border-white dark:border-dark bg-transparent text-white dark:text-dark hover:bg-white dark:hover:bg-dark dark:hover:text-white hover:text-dark duration-300 text-base font-semibold rounded-full hover:cursor-pointer'>
@@ -98,7 +98,7 @@ const Hero: React.FC = () => {
             </div>
             <div className='flex flex-col sm:items-center gap-3'>
               <p className='text-2xl sm:text-3xl font-medium text-inherit'>
-                $4,750,000
+                ₦4,750,000
               </p>
               <p className='text-sm sm:text-base font-normal text-black/50 dark:text-white/50'>
                 For selling price

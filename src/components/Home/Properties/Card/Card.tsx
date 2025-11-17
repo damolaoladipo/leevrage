@@ -47,7 +47,7 @@ const PropertyCard: React.FC<{ item: PropertyHomes }> = ({ item }) => {
             </div>
             <div>
               <button className='text-base font-normal text-primary px-5 py-2 rounded-full bg-primary/10'>
-                ${rate}
+                ₦{rate}
               </button>
             </div>
           </div>

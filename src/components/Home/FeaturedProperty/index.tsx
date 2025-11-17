@@ -65,7 +65,7 @@ const FeaturedProperty: React.FC = () => {
                 <button
                   key={index}
                   onClick={() => handleDotClick(index)}
-                  className={`w-2.5 h-2.5 rounded-full ${current === index + 1 ? "bg-white" : "bg-white/50"}`}
+                  className={`w-2.5 h-2.5 rounded-full {current === index + 1 ? "bg-white" : "bg-white/50"}`}
                 />
               ))}
             </div>
@@ -87,7 +87,7 @@ const FeaturedProperty: React.FC = () => {
               </div>
             </div>
             <p className="text-base text-dark/50 dark:text-white/50">
-              Experience luxury living at modern luxe villa, located at 20 S Aurora Ave, Miami. Priced at $1,650,500, this 560 ft² smart home offers 4 bedrooms,
+              Experience luxury living at modern luxe villa, located at 20 S Aurora Ave, Miami. Priced at ₦1,650,500, this 560 ft² smart home offers 4 bedrooms,
               3 bathrooms, and spacious living areas. Enjoy energy efficiency, natural light, security systems, outdoor spaces, and 2 bar areas—perfect for 8+
               guests. Built in 2025.
             </p>
@@ -183,7 +183,7 @@ const FeaturedProperty: React.FC = () => {
               </Link>
               <div>
                 <h4 className="text-3xl text-dark dark:text-white font-medium">
-                  $1,650,500
+                  1,650,500
                 </h4>
                 <p className="text-base text-dark/50">
                   Discounted price

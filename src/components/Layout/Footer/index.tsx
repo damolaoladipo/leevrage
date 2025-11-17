@@ -71,7 +71,7 @@ const Footer = () => {
         </div>
         <div className="flex justify-between md:flex-nowrap flex-wrap items-center py-6 gap-6">
           <p className="text-white/40 text-sm ">
-            ©2025 Leevrage - Design & Developed by <Link href="https://getnextjstemplates.com/" className="hover:text-primary" target="_blanck">GetNextJs Templates</Link>
+            ©2025 Leevrage - Design & Developed by <Link href="https://damolaoladipo.com" className="hover:text-primary" target="_blanck">Damola Oladipo</Link>
           </p>
           <div className="flex gap-8 items-center">
             <Link href="#" className="text-white/40 hover:text-primary text-sm">

@@ -5,10 +5,12 @@
 
 @theme {
   /* Gradient colors */
-  --color-primary: #07be8a;
-  --color-skyblue: #79adff;
+  --color-primary: #E55B3F;
+  --color-skyblue: #C9A050;
   --color-lightskyblue: #9cc2dd;
   --color-dark: #172023;
+
+  /* #29537c #E55B3F #FCFCFC #C9A050 */
 
   /* Shadow */
   --shadow-3xl: 0px 4px 6px -2px #0000000D, 0px 10px 15px -3px #0000001A;
