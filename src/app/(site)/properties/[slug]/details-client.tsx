@@ -141,7 +141,7 @@ export default function DetailsClient({ item, testimonials }: Props) {
                             <p className='text-dark dark:text-white text-xm '>
                                 The primary suite serves as a private retreat with a spa-like ensuite bathroom and a spacious walk-in closet.
                                 each additional bedroom is thoughtfully designed with comfort and style in mind, offering ample space and modern
-                                finishes. the home's three bathrooms feature high-end fixtures, custom vanities, and elegant tiling.
+                                finishes. the home&apos;s three bathrooms feature high-end fixtures, custom vanities, and elegant tiling.
                             </p>
                             <p className='text-dark dark:text-white text-xm '>
                                 Outdoor living is equally impressive, with a beautifully landscaped backyard, multiple lounge areas,
