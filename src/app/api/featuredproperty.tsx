@@ -1,6 +1,6 @@
 import { FeaturedProperty } from '@/types/featuredProperty'
 
-export const featuredProprty: FeaturedProperty[] = [
+const featuredData: FeaturedProperty[] = [
   {
     scr: '/images/featuredproperty/image-1.jpg',
     alt: 'property6',
@@ -18,3 +18,5 @@ export const featuredProprty: FeaturedProperty[] = [
     alt: 'property9',
   },
 ]
+
+export const featuredProprty: FeaturedProperty[] = featuredData

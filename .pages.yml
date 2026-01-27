@@ -1,0 +1,210 @@
+# Pages CMS Configuration for Leeverage
+media: public/media
+
+content:
+  # Blog Posts Collection
+  - name: blog
+    label: Blog Posts
+    type: collection
+    path: content/blog
+    format: json
+    view:
+      fields: [title, date, author]
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: slug
+        label: Slug
+        type: string
+        required: true
+        help: "URL-friendly name (e.g., home-buying-tips)"
+      - name: excerpt
+        label: Excerpt
+        type: string
+        required: true
+        help: "Short summary for listing pages"
+      - name: detail
+        label: Content
+        type: rich-text
+        required: true
+        help: "Full blog post content"
+      - name: coverImage
+        label: Cover Image
+        type: image
+        required: true
+      - name: author
+        label: Author Name
+        type: string
+        required: true
+      - name: authorImage
+        label: Author Image
+        type: image
+        required: true
+      - name: date
+        label: Publish Date
+        type: date
+        required: true
+      - name: tag
+        label: Category Tag
+        type: string
+        required: true
+        options: ["Tip", "Guide", "News", "Tutorial"]
+
+  # Properties Collection
+  - name: properties
+    label: Properties
+    type: collection
+    path: content/properties
+    format: json
+    view:
+      fields: [name, location, rate]
+    fields:
+      - name: name
+        label: Property Name
+        type: string
+        required: true
+      - name: slug
+        label: Slug
+        type: string
+        required: true
+        help: "URL-friendly name (e.g., serenity-height-villas)"
+      - name: location
+        label: Location
+        type: string
+        required: true
+      - name: rate
+        label: Price
+        type: string
+        required: true
+        help: "Format: '$1,250,000 per year'"
+      - name: beds
+        label: Bedrooms
+        type: number
+        required: true
+      - name: baths
+        label: Bathrooms
+        type: number
+        required: true
+      - name: area
+        label: Area (sq meters)
+        type: number
+        required: true
+      - name: images
+        label: Property Images
+        type: object
+        list: true
+        required: true
+        fields:
+          - name: src
+            label: Image URL
+            type: image
+            required: true
+
+  # Testimonials Collection
+  - name: testimonials
+    label: Testimonials
+    type: collection
+    path: content/testimonials
+    format: json
+    view:
+      fields: [name, position]
+    fields:
+      - name: review
+        label: Review Text
+        type: rich-text
+        required: true
+      - name: name
+        label: Customer Name
+        type: string
+        required: true
+      - name: position
+        label: Position/Role
+        type: string
+        required: true
+      - name: image
+        label: Profile Image
+        type: image
+        required: true
+
+  # Featured Properties Collection
+  - name: featured-properties
+    label: Featured Properties
+    type: collection
+    path: content/featured-properties
+    format: json
+    view:
+      fields: [alt]
+    fields:
+      - name: src
+        label: Featured Image
+        type: image
+        required: true
+      - name: alt
+        label: Alt Text
+        type: string
+        required: true
+
+  # Navigation Links (Single File)
+  - name: navigation
+    label: Navigation
+    type: document
+    path: content/navigation/nav-links.json
+    format: json
+    fields:
+      - name: links
+        label: Navigation Links
+        type: object
+        list: true
+        fields:
+          - name: label
+            label: Link Label
+            type: string
+            required: true
+          - name: href
+            label: URL
+            type: string
+            required: true
+
+  # Footer Links (Single File)
+  - name: footer
+    label: Footer
+    type: document
+    path: content/footer/footer-links.json
+    format: json
+    fields:
+      - name: links
+        label: Footer Links
+        type: object
+        list: true
+        fields:
+          - name: label
+            label: Link Label
+            type: string
+            required: true
+          - name: href
+            label: URL
+            type: string
+            required: true
+
+  # FAQs (Single File)
+  - name: faqs
+    label: FAQs
+    type: document
+    path: content/faqs/faqs.json
+    format: json
+    fields:
+      - name: items
+        label: FAQ Items
+        type: object
+        list: true
+        fields:
+          - name: question
+            label: Question
+            type: string
+            required: true
+          - name: answer
+            label: Answer
+            type: rich-text
+            required: true

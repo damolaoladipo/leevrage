@@ -1,3 +1,5 @@
+'use client'
+
 import { Icon } from '@iconify/react';
 import Image from 'next/image';
 import {
@@ -6,6 +8,21 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion"
+
+const faqItems = [
+  {
+    question: "1. Can I personalize my leeverage home?",
+    answer: "Discover a diverse range of premium properties, from luxurious apartments to spacious villas, tailored to your needs."
+  },
+  {
+    question: "2. Where can I find leeverage homes?",
+    answer: "Discover a diverse range of premium properties, from luxurious apartments to spacious villas, tailored to your needs."
+  },
+  {
+    question: "3. What steps to buy a leeverage?",
+    answer: "Discover a diverse range of premium properties, from luxurious apartments to spacious villas, tailored to your needs."
+  }
+]
 
 const FAQ: React.FC = () => {
     return (
@@ -35,24 +52,14 @@ const FAQ: React.FC = () => {
                         </p>
                         <div className="my-8">
                             <Accordion type="single" defaultValue="item-1" collapsible className="w-full flex flex-col gap-6">
-                                <AccordionItem value="item-1">
-                                    <AccordionTrigger>1. Can I personalize my leeverage home?</AccordionTrigger>
-                                    <AccordionContent>
-                                        Discover a diverse range of premium properties, from luxurious apartments to spacious villas, tailored to your needs.
-                                    </AccordionContent>
-                                </AccordionItem>
-                                <AccordionItem value="item-2">
-                                    <AccordionTrigger>2. Where can I find leeverage homes?</AccordionTrigger>
-                                    <AccordionContent>
-                                        Discover a diverse range of premium properties, from luxurious apartments to spacious villas, tailored to your needs.
-                                    </AccordionContent>
-                                </AccordionItem>
-                                <AccordionItem value="item-3">
-                                    <AccordionTrigger>3. What steps to buy a leeverage?</AccordionTrigger>
-                                    <AccordionContent>
-                                        Discover a diverse range of premium properties, from luxurious apartments to spacious villas, tailored to your needs.
-                                    </AccordionContent>
-                                </AccordionItem>
+                                {faqItems.map((item, index) => (
+                                    <AccordionItem key={index} value={`item-${index + 1}`}>
+                                        <AccordionTrigger>{item.question}</AccordionTrigger>
+                                        <AccordionContent>
+                                            {item.answer}
+                                        </AccordionContent>
+                                    </AccordionItem>
+                                ))}
                             </Accordion>
                         </div>
                     </div>

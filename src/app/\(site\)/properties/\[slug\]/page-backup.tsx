@@ -10,11 +10,11 @@ export async function generateStaticParams() {
 }
 
 type Props = {
-    params: Promise<{ slug: string }>;
+    params: { slug: string };
 };
 
-export default async function Details({ params }: Props) {
-    const { slug } = await params;
+export default function Details({ params }: Props) {
+    const { slug } = params;
     const item = propertyHomes.find((item) => item.slug === slug);
 
     if (!item) {

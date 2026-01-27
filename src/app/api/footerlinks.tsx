@@ -1,6 +1,6 @@
 import { footerlinks } from "@/types/footerlinks"
 
-export const FooterLinks: footerlinks[] = [
+const footerLinksData: footerlinks[] = [
     { label: 'Luxury Villas', href: '/luxury-villa' },
     { label: 'Residential Homes', href: '/residential-homes' },
     { label: 'Apartments', href: '/appartment' },
@@ -8,3 +8,5 @@ export const FooterLinks: footerlinks[] = [
     { label: 'Blog', href: '/blogs' },
     { label: 'Hopsitality', href: '/hospitality' },
 ]
+
+export const FooterLinks: footerlinks[] = footerLinksData
