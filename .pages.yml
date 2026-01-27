@@ -91,6 +91,15 @@ content:
         label: Area (sq meters)
         type: number
         required: true
+      - name: type
+        label: Property Type
+        type: string
+        required: true
+        options:
+          - luxury-villa
+          - residential-home
+          - appartment
+          - office-space
       - name: images
         label: Property Images
         type: object

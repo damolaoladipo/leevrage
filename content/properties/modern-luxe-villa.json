@@ -6,6 +6,7 @@
   "beds": 3,
   "baths": 4,
   "area": 180,
+  "type": "luxury-villa",
   "images": [
     { "src": "/images/properties/property3/property3.jpg" },
     { "src": "/images/properties/property3/image-2.jpg" },

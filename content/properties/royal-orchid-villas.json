@@ -6,6 +6,7 @@
   "beds": 6,
   "baths": 3,
   "area": 200,
+  "type": "residential-home",
   "images": [
     { "src": "/images/properties/property4/property4.jpg" },
     { "src": "/images/properties/property4/image-2.jpg" },

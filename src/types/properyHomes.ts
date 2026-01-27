@@ -6,6 +6,7 @@ export type PropertyHomes = {
   beds: number
   baths: number
   area: number
+  type: 'luxury-villa' | 'residential-home' | 'appartment' | 'office-space'
   images: PropertyImage[]
 }
 

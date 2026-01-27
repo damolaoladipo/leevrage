@@ -6,6 +6,7 @@
   "beds": 4,
   "baths": 3,
   "area": 150,
+  "type": "office-space",
   "images": [
     { "src": "/images/properties/property8.jpg" },
     { "src": "/images/properties/property2.jpg" },
