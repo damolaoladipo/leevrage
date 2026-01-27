@@ -217,3 +217,188 @@ content:
             label: Answer
             type: rich-text
             required: true
+
+  # Hero Section (Single File)
+  - name: hero
+    label: Hero Section
+    type: document
+    path: content/hero/hero.json
+    format: json
+    fields:
+      - name: location
+        label: Location/Badge
+        type: string
+        required: true
+        help: "e.g., Palm springs, CA"
+      - name: title
+        label: Main Title
+        type: string
+        required: true
+        help: "e.g., Futuristic Haven"
+      - name: subtitle
+        label: Subtitle
+        type: string
+        required: false
+      - name: ctaText
+        label: Primary Button Text
+        type: string
+        required: true
+      - name: ctaLink
+        label: Primary Button Link
+        type: string
+        required: true
+      - name: secondaryCtaText
+        label: Secondary Button Text
+        type: string
+        required: true
+      - name: secondaryCtaLink
+        label: Secondary Button Link
+        type: string
+        required: true
+      - name: heroImage
+        label: Hero Banner Image
+        type: image
+        required: true
+      - name: features
+        label: Features
+        type: object
+        list: true
+        fields:
+          - name: label
+            label: Feature Label
+            type: string
+            required: true
+          - name: icon
+            label: Icon Name
+            type: string
+            required: true
+
+  # Services Section (Single File)
+  - name: services
+    label: Services Section
+    type: document
+    path: content/services/services.json
+    format: json
+    fields:
+      - name: tag
+        label: Section Tag
+        type: string
+        required: true
+        help: "e.g., Categories"
+      - name: title
+        label: Section Title
+        type: string
+        required: true
+      - name: description
+        label: Section Description
+        type: string
+        required: true
+      - name: ctaText
+        label: CTA Button Text
+        type: string
+        required: true
+      - name: ctaLink
+        label: CTA Button Link
+        type: string
+        required: true
+      - name: categories
+        label: Categories
+        type: object
+        list: true
+        fields:
+          - name: name
+            label: Category Name
+            type: string
+            required: true
+          - name: description
+            label: Description
+            type: string
+            required: true
+          - name: image
+            label: Category Image
+            type: image
+            required: true
+          - name: link
+            label: Category Link
+            type: string
+            required: true
+
+  # Interior Design Section (Single File)
+  - name: interior-design
+    label: Interior Design Section
+    type: document
+    path: content/interior-design/interior-design.json
+    format: json
+    fields:
+      - name: tag
+        label: Section Tag
+        type: string
+        required: true
+        help: "e.g., Interior design"
+      - name: title
+        label: Section Title
+        type: string
+        required: true
+      - name: description
+        label: Section Description
+        type: string
+        required: true
+      - name: ctaText
+        label: CTA Button Text
+        type: string
+        required: true
+      - name: ctaLink
+        label: CTA Button Link
+        type: string
+        required: true
+      - name: categories
+        label: Categories
+        type: object
+        list: true
+        fields:
+          - name: name
+            label: Category Name
+            type: string
+            required: true
+          - name: description
+            label: Description
+            type: string
+            required: true
+          - name: image
+            label: Category Image
+            type: image
+            required: true
+          - name: link
+            label: Category Link
+            type: string
+            required: true
+
+  # Get In Touch Section (Single File)
+  - name: get-in-touch
+    label: Get In Touch Section
+    type: document
+    path: content/get-in-touch/get-in-touch.json
+    format: json
+    fields:
+      - name: title
+        label: Main Title
+        type: string
+        required: true
+      - name: ctaText
+        label: CTA Button Text
+        type: string
+        required: true
+      - name: ctaLink
+        label: CTA Button Link
+        type: string
+        required: true
+      - name: videoUrl
+        label: Background Video URL
+        type: string
+        required: true
+      - name: bannerMessages
+        label: Banner Messages
+        type: string
+        list: true
+        required: true
+        help: "Messages that scroll in the banner below"
