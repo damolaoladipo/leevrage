@@ -2,16 +2,19 @@ import HeroSub from "@/components/shared/HeroSub";
 import ResidentialList from "@/components/Properties/Residential";
 import React from "react";
 import { Metadata } from "next";
+import { residentialHomesPage } from "@/app/api/pages";
+
 export const metadata: Metadata = {
-    title: "Property List | leeverage",
+    title: residentialHomesPage.title + " | leeverage",
+    description: residentialHomesPage.description,
 };
 
 const page = () => {
     return (
         <>
             <HeroSub
-                title="Residential Homes."
-                description="Experience elegance and comfort with our exclusive luxury  villas, designed for sophisticated living."
+                title={residentialHomesPage.heading}
+                description={residentialHomesPage.subheading}
                 badge="Properties"
             />
             <ResidentialList />

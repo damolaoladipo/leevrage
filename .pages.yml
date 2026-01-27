@@ -402,3 +402,52 @@ content:
         list: true
         required: true
         help: "Messages that scroll in the banner below"
+  # Pages Metadata Collection
+  - name: pages
+    label: Pages
+    type: collection
+    path: content/pages
+    format: json
+    view:
+      fields: [slug, title]
+    fields:
+      - name: slug
+        label: Page Slug
+        type: string
+        required: true
+        help: "Unique page identifier (e.g., blogs, properties, contactus)"
+      - name: title
+        label: Page Title
+        type: string
+        required: true
+        help: "Main title for the page (SEO)"
+      - name: description
+        label: Page Description
+        type: string
+        required: true
+        help: "Meta description for SEO"
+      - name: heading
+        label: Page Heading
+        type: string
+        required: true
+        help: "Large heading shown on the page"
+      - name: subheading
+        label: Page Subheading
+        type: string
+        required: true
+        help: "Smaller subheading or tagline"
+      - name: email
+        label: Contact Email
+        type: string
+        required: false
+        help: "For contact page only"
+      - name: phone
+        label: Contact Phone
+        type: string
+        required: false
+        help: "For contact page only"
+      - name: address
+        label: Contact Address
+        type: string
+        required: false
+        help: "For contact page only"

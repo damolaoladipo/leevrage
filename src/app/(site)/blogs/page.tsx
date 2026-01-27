@@ -1,18 +1,19 @@
 import BlogList from "@/components/Blog";
 import HeroSub from "@/components/shared/HeroSub";
 import { Metadata } from "next";
+import { blogsPage } from "@/app/api/pages";
 
 export const metadata: Metadata = {
-    title:
-        "Blog Grids | leeverage ",
+    title: blogsPage.title + " | leeverage",
+    description: blogsPage.description,
 };
 
 const Blog = () => {
     return (
         <>
             <HeroSub
-                title="Real estate insights."
-                description="Stay ahead in the property market with expert advice and updates."
+                title={blogsPage.heading}
+                description={blogsPage.subheading}
                 badge="Blog"
             />
             <BlogList />
